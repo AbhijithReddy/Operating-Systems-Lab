@@ -14,6 +14,7 @@ int main()
 	if (process == 0)//fork returns 0 for child process
 	{
 		printf("\nC: Inside Child process! ---pid: %d, parent pid: %d\n",getpid(), getppid());
+		exit(0);//Terminating child process using wait() system call
 	}
 	else
 	{
